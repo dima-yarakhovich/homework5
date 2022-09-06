@@ -6,7 +6,43 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
 
+    }
+
+    private static void task8() {
+        int a=139;
+        int b=a/10%10;
+        System.out.println(b);
+    }
+
+    private static void task7() {
+        int a=5;
+        int b=7;
+        b=a+b;
+        a=b-a;
+        b=b-a;
+        System.out.println("Значение а равно "+ a +" Значение b равно "+ b);
+        System.out.println();
+    }
+
+    private static void task6() {
+        int a=12;
+        int b=27;
+        int c=44;
+        int d=15;
+        int e=9;
+        int result=a*(b+(c-d*e));
+        if (result>=0) {
+            result=-result;
+            System.out.println( result);
+        } else if (result<0) {
+            result=Math.abs(result);
+            System.out.println( result);
+        }
+        System.out.println();
     }
 
     private static void task5() {
@@ -36,6 +72,7 @@ public class Main {
             default:
                 System.out.println(" Такой поры года не существует");
         }
+        System.out.println();
     }
 
     private static void task4() {
